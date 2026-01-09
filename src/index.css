@@ -21,3 +21,74 @@
   background-position-x: right;
   background-position-y: bottom;
 }
+
+.app-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.price-card {
+  background-color: var(--card-bg-color);
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.price-card.highlighted {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 70px 30px;
+  z-index: 2;
+  border-radius: 12px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-features li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.card-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.card-button:hover {
+  opacity: 0.9;
+}
+
+.highlighted .card-button {
+  background-color: white;
+  color: var(--primary-color);
+}
